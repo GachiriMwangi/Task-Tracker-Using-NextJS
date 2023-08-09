@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1, 
+  "text": "Go for an interview at Microsoft.",
+  "day": "July 21 9:00 p.m.",
+  "reminder": false
+},
+{"id": 2, 
+  "text": "Listen to Jordan Peterson.",
+  "day": "July 18, 6:00 p.m.",
+  "reminder": true
+},
+{  "id": 3,
+  "text": "Watch Fatal Seduction.",
+  "day": "July 14 10:00 p.m.",
+  "reminder": true
+}
+]
