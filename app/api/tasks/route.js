@@ -4,12 +4,11 @@ import {v4 as uuidv4} from 'uuid'
 import path from 'path'
 
 export async function GET(request){
-    return (
-        NextResponse.json(tasks)
-    )
+    const allTasks = await axios.get('http://localhost:5000/tasks')
+    return NextResponse.json(allTasks)
     }
 export async function POST(request){
-    const {
+    const { 
         text, day, reminder
     } = await request.json()
     const newTask = {
@@ -20,7 +19,6 @@ export async function POST(request){
     }
     const dir = '/data.json'
    const thispath =  path.join(__dirname, dir)
-    console.log(thispath)
     tasks.push(newTask)
     return NextResponse.json({tasks})
 }

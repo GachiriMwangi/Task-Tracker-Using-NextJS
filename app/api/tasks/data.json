@@ -14,5 +14,11 @@
   "text": "Watch Fatal Seduction.",
   "day": "July 14 10:00 p.m.",
   "reminder": true
+}, 
+{ 
+  "id": 4,
+  "text": "Go for an interview at Microsoft.",
+  "day": "July 30 08:00 a.m.",
+  "reminder": false
 }
 ]

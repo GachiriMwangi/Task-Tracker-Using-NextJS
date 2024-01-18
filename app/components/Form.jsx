@@ -36,21 +36,21 @@ if(response.ok){
   return (
     <form className="add-form" method="POST" onSubmit={onSubmit}>
     <div className="form-control">
-        <label htmlFor="text">Text</label>
+        <label htmlFor="text" id="text">Text</label>
         <input type="text" placeholder="Add some text"
           name="text" value={text} 
         onChange={(e) => setText(e.target.value)} />
     </div>
 
     <div className="form-control">
-        <label htmlFor="day">Day</label>
+        <label htmlFor="day" id="day">Day</label>
         <input type="text" name="day" value={day} 
         placeholder="Add a date here."
         onChange={(e) => setDay(e.target.value)} />
     </div>
 
     <div className="form-control-check">
-        <label htmlFor="text">Set Reminder</label>
+        <label htmlFor="text" id="reminder">Set Reminder</label>
         <input type="checkbox" className="" name="checkbox" value={reminder} 
         onChange={(e) => setReminder(e.currentTarget.checked)} />
     </div><br/>
